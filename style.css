@@ -1,0 +1,236 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #6A5ACD;
+}
+
+.curriculo {
+    min-height: 100vh;
+    width: 90%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.esquerda {
+    grid-column: span 2;
+    height: 100%;
+    background-color: #191970;
+    padding: 2rem 2rem;
+}
+
+.perfil {
+    width: 100%;
+}
+
+.perfil .imagem-perfil {
+    width: 100%;
+}
+
+.nome-perfil {
+    color: #F8F8FF;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.carreira {
+    color: #6A5ACD;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.contato ul {
+    padding-top: 1.5rem;
+}
+
+.contato ul li {
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: #F8F8FF;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.contato ul li i {
+    padding-right: 1rem;
+    font-size: 18px;
+    color: #4169e1;
+}
+
+a {
+    color: #F8F8FF;
+    text-decoration: none;
+}
+
+.titulo-esquerda {
+    color: #6A5ACD;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.habilidades ul {
+    padding-top: 1.5rem;
+}
+.habilidades ul li p {
+    padding: .4rem 0;
+    color: #F8F8FF;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.direita {
+    grid-column: span 5;
+    height: 100%;
+    background-color: #B0C4DE;
+    border-radius: 0px 60px 0px 0px;
+    padding: 2rem 2rem;
+}
+
+
+.titulo-direita {
+    color: #191970;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.sobre {
+    padding-bottom: 2rem;
+}
+
+.texto-sobre {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.texto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 2rem;
+}
+
+.periodo {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.nome {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #4169e1;
+    padding-bottom: .4rem;
+}
+
+.descricao {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    border-left: 3px solid #4169e1;
+    padding-left: 5px;
+}
+
+@media screen and (max-width:780px) {
+    .texto {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:780px) {
+    .esquerda {
+        grid-column: span 3;
+    }
+    
+    .direita {
+        grid-column: span 4;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .curriculo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:390px) {
+    .curriculo {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .nome-perfil {
+        font-size: 20px;
+    }
+
+    .carreira {
+        font-size: 18px;
+    }
+
+    .titulo-esquerda {
+        font-size: 18px;
+    }
+
+    .titulo-direita {
+        font-size: 18px;
+    }
+
+    .contato ul li {
+        font-size: 12px;
+    }
+
+    .contato ul li i {
+        /* padding-right: 1rem; */
+        font-size: 12px;
+    }
+
+    .habilidades ul li p {
+        font-size: 12px;
+    }
+
+    .texto-sobre {
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+
+    .nome {
+        font-size: 18px;
+    }
+
+    .periodo {
+        font-size: 16px;
+    }
+
+    .nome {
+        font-size: 18px;
+    }
+}
