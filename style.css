@@ -71,7 +71,7 @@ body {
     color: #4169e1;
 }
 
-a {
+.contato a {
     color: #F8F8FF;
     text-decoration: none;
 }
@@ -135,6 +135,10 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 2rem;
+}
+.texto a {
+    color: #4169e1;
+    text-decoration: none; 
 }
 
 .periodo {
